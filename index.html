@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Électronique & GEII</title>
+    <style>
+        /* Styles de base - Thème Sombre & Tech */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1, h2, h3 { color: #4CAF50; /* Vert style circuit imprimé */ }
+        a { color: #4CAF50; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        /* Conteneur principal */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
 
+        /* En-tête */
+        header {
+            background: #1e1e1e;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #4CAF50 3px solid;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        header h1 { margin: 0; color: #fff; font-size: 2.5em; }
+        header p { color: #aaa; font-size: 1.2em; }
+
+        /* Sections */
+        section {
+            background: #1e1e1e;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Grille des compétences */
+        .skills-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skill-box {
+            background: #2a2a2a;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        /* Grille des projets */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        .project-card h3 { margin-top: 0; }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #aaa;
+            margin-top: 20px;
+        }
+
+        /* Bouton CV */
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: #121212;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .btn:hover { background: #45a049; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Wesly JOSEPH
+            <p>Étudiant en BUT GEII | Passionné d'Électronique & de Systèmes Embarqués</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>Salut ! 👋</h2>
+            <p>Je suis actuellement en 2ème année de BUT Génie Électrique et Informatique Industrielle (GEII). Je suis passionné par la conception de cartes électroniques, la programmation de microcontrôleurs.  Je suis actuellement à la recherche d'une alternance pour l'année 2026-2027 pour mettre en pratique mes connaissances dans un environnement industriel stimulant.</p>
+            <a href="#" class="btn">Télécharger mon CV (PDF)</a>
+        </section>
+
+        <section id="skills">
+            <h2>Mes Compétences Techniques 🛠️</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3> CAO</h3>
+                    <p>KiCad, Altium, Routage PCB</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Électronique </h3>
+                    <p>C/C++, VHDL, Python, Microcontrôleurs (PiPico, Arduino),  Analyse de signaux (Oscilloscope)</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Automatisme</h3>
+                    <p>PL7 Pro, Automates programmables, Réseaux industriels</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Mes Projets & SAE 🚀</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <h3>Station Météo Connectée (SAE)</h3>
+                    <p><strong>Objectif :</strong> Mesurer la température, l'humidité et envoyer les données en Wi-Fi.</p>
+                    <p><strong>Technologies :</strong> ESP32, Capteur DHT11, Programmation en C++, Routage PCB sur KiCad.</p>
+                    <p><em>Rôle : Conception du schéma structurel et code de communication.</em></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Robot Suiveur de Ligne</h3>
+                    <p><strong>Objectif :</strong> Créer un robot autonome capable de suivre un tracé noir sur fond blanc le plus rapidement possible.</p>
+                    <p><strong>Technologies :</strong> STM32, Capteurs infrarouges, Pont en H, Asservissement PID.</p>
+                    <p><em>Défi relevé : Réglage fin du correcteur PID pour éviter les oscillations dans les virages.</em></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Thermostat / Climatiseur / Séchoir à fruit fictif </h3>
+                    <p><strong>Objectif :</strong> Créer un robot capabl</p>
+                    <p><strong>Technologies :</strong> [Liste les outils et langages]</p>
+                    <p><em>Note : Tu pourras ajouter une image ici plus tard avec la balise &lt;img&gt;</em></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Me Contacter 📬</h2>
+            <p>Un projet intéressant ? Une opportunité ? N'hésite pas à me contacter !</p>
+            <p>
+                📧 Email : <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a><br>
+                💼 LinkedIn : <a href="#">linkedin.com/in/tonprofil</a><br>
+                🐙 GitHub : <a href="#">github.com/tonprofil</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 [Ton Prénom] [Ton Nom]. Fait avec passion et pas mal de café.</p>
+    </footer>
+
+</body>
+</html>
